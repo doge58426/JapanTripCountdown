@@ -1,5 +1,5 @@
 const timer_text = document.getElementById("timer_text")
-const release_date = new Date(2026, 4, 26, 0)
+const release_date = new Date(2026, 10, 22, 0)
 const test_date = new Date(2025, 6, 3, 20, 57, 0, 0);
 const confetti_canvas = document.getElementById("confetti")
 let timer_text_interval = setInterval(timer, 10)
