@@ -20,7 +20,7 @@ function format_time({days, hours, minutes, seconds}) {
 
 function timer() {
   const d = new Date()
-  let time_until_release = test_date.getTime() - d.getTime()
+  let time_until_release = release_date.getTime() - d.getTime()
   timer_text.innerHTML = format_time(milliseconds_to_time(time_until_release))
   if (time_until_release <= 0) {
     celebration()
