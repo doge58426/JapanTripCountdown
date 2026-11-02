@@ -1,6 +1,6 @@
 const timer_text = document.getElementById("timer_text")
 const release_date = new Date(2026, 11, 23, 14, 35)
-const test_date = new Date(2026, 6, 3, 20, 57, 0, 0);
+const test_date = new Date(2026, 10, 2, 13, 7, 0, 0);
 const confetti_canvas = document.getElementById("confetti")
 let timer_text_interval = setInterval(timer, 10)
 
@@ -20,7 +20,7 @@ function format_time({days, hours, minutes, seconds}) {
 
 function timer() {
   const d = new Date()
-  let time_until_release = release_date.getTime() - d.getTime()
+  let time_until_release = test_date.getTime() - d.getTime()
   timer_text.innerHTML = format_time(milliseconds_to_time(time_until_release))
   if (time_until_release <= 0) {
     celebration()
